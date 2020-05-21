@@ -7,8 +7,8 @@ services:
 
 
 before_install:
-  - docker build -t jmp/TEST-REACT -f Dockerfile.dev .
+  - docker build -t jmp/test-react -f Dockerfile.dev .
   
 script:
-  - docker run jmp/TEST-REACT npm run test -- --coverage
+  - docker run jmp/test-react npm run test -- --coverage
 
